@@ -31,13 +31,10 @@ expresionLogica = ['p implies q', 'not q', 'not q and r', '(p implies q) or (not
 
 tablita = ttg.Truths(proposiciones, expresionLogica)
 
-# Convertir el objeto tablita a una lista de strings
 tablita_list = str(tablita).split('\n')
 
-# Invertir el orden de la lista
 tablita_list = tablita_list[::-1]
 
-# Unir los elementos de la lista en un solo string
 tablita_invertida = '\n'.join(tablita_list)
 
 print(tablita_invertida)
